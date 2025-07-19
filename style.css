@@ -27,7 +27,6 @@ padding-top: 30px;
 
 #top {
 background: url(img/logo.png) top right no-repeat; 
-font-size:11px;
 background-position: 10px 10px;
 padding-top: 20px;
 padding-right: 20px;
@@ -36,7 +35,7 @@ width: 966px;
 height: 80px;
 font-family: "Lucida Grande", Arial, Verdana, Tahoma, sans serif;
 line-height: 28px;
-font-size: 24px;
+font-size: 22px;
 text-align: right;
 vertical-align: center;
 }
