@@ -94,7 +94,7 @@ color: navy;
 display: block;
 /*background:  url(images/off.png) top center no-repeat;*/
 background: #dcf2ff;
-padding: 8px 0 0 10px;
+padding: 4px 0 0 10px;
 height: 29px;
 text-align: left;
 }
@@ -103,7 +103,7 @@ text-align: left;
 color: blue;
 /*background:  url(images/on.png) top center no-repeat;*/
 background: #e6f5ff;
-padding: 8px 0 0 10px;
+padding: 4px 0 0 12px;
 height: 29px;
 text-align: left;
 }	
