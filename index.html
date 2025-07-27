@@ -26,6 +26,8 @@
           id="myCarousel"
           class="carousel slide mastslide"
           data-ride="carousel"
+          data-interval="5000"
+          data-touch="true"
         >
           <ol class="carousel-indicators hidden-xs">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -272,5 +274,25 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/menu.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".carousel").on("touchstart", function (event) {
+          const xClick = event.originalEvent.touches[0].pageX;
+          $(this).one("touchmove", function (event) {
+            const xMove = event.originalEvent.touches[0].pageX;
+            const sensitivityInPx = 5;
+    
+            if (Math.floor(xClick - xMove) > sensitivityInPx) {
+              $(this).carousel("next");
+            } else if (Math.floor(xClick - xMove) < -sensitivityInPx) {
+              $(this).carousel("prev");
+            }
+          });
+          $(this).on("touchend", function () {
+            $(this).off("touchmove");
+          });
+        });
+      });
+    </script>
   </body>
 </html>
