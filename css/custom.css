@@ -116,7 +116,10 @@ body {
 }
 
 .carousel-inner {
-  height: 350px;
+  max-height: 350px;
+  height: 100%;
+  width: 100%;
+  aspect-ratio: 1018/350; /* Maintains a 16:9 aspect ratio */
 }
 
 .carousel-inner > .item > img {
