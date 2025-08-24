@@ -38,6 +38,15 @@
   /**************************************************/
   /*                   Top Piece                    */
   /**************************************************/
+
+  .conference-details {
+	text-align: right; 
+  }
+  
+  .conference-details span {
+	white-space: nowrap;
+  }
+  
   #top {
 	background-color: white;
 	max-width: var(--top-width);
@@ -46,7 +55,6 @@
 	font-family: "Lucida Grande", Arial, Verdana, Tahoma, sans serif;
 	line-height: 28px;
 	font-size: 22px;
-	text-align: right;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
