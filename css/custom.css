@@ -775,3 +775,44 @@ body {
 .panel-group .panel-program+.panel-program {
   margin-top: 0px;
 }
+
+.reg-table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+.reg-table .fee-col {
+  width: 25%;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.reg-table .reg-col {
+  width: 30%;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.reg-table .reg-btn {
+  min-width: 110px;
+}
+
+.reg-table .section-row td {
+  font-weight: bold;
+  background: #f6f6f6; /* neutral section bar */
+  min-height: auto;
+  height: 2.5em;
+}
+#colorTable.reg-table a.reg-btn.btn-primary {
+  background-color: #D4E4A0 !important;
+  border-color: #666 !important;
+  color: #000000 !important;
+  font-weight: bold;
+}
+
+#colorTable.reg-table a.reg-btn.btn-primary:hover,
+#colorTable.reg-table a.reg-btn.btn-primary:focus {
+  background-color: #555 !important;
+  border-color: #555 !important;
+  color: #fff !important;
+}
