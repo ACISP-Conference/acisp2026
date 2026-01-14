@@ -816,3 +816,25 @@ body {
   border-color: #555 !important;
   color: #fff !important;
 }
+
+
+/* Reuse the same idea: table is 100% width, but allow wrapping */
+.dates-table {
+  width: 100%;
+  max-width: 100%;
+  table-layout: auto; /* unlike reg-table fixed layout */
+}
+
+.dates-table td,
+.dates-table th {
+  white-space: normal;      /* critical: allows wrapping */
+  overflow-wrap: anywhere;  /* handles long phrases/links */
+}
+
+/* Reuse your existing mobile breakpoint style */
+@media (max-width: 767px) {
+  .table-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
