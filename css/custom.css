@@ -859,3 +859,28 @@ body {
   font-weight: 600;
   text-decoration: underline;
 }
+
+.paper {
+  margin: 14px 0;
+  padding: 14px 16px;
+  border: 1px solid rgba(0,0,0,0.12);
+  border-radius: 10px;
+  background: #fff;
+}
+
+.paper h5 {
+  margin: 0 0 6px 0;
+  line-height: 1.25;
+}
+
+.paper p {
+  margin: 0;
+  color: rgba(0,0,0,0.72);
+}
+
+
+.paper:hover {
+  border: 1px solid rgba(0,0,0,0.80);
+  border-radius: 10px;
+
+}
