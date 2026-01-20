@@ -838,3 +838,24 @@ body {
     -webkit-overflow-scrolling: touch;
   }
 }
+
+.callout {
+  margin: 14px 0;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border-left: 5px solid #dcf2ff;
+  background: rgba(43, 108, 176, 0.08);
+}
+
+.callout p {
+  margin: 0 0 10px 0;
+}
+
+.callout p:last-child {
+  margin-bottom: 0;
+}
+
+.callout a {
+  font-weight: 600;
+  text-decoration: underline;
+}
