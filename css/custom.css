@@ -895,7 +895,7 @@ body {
   font-size: 14px;
   font-weight: 600;
   color: rgba(0, 0, 0, 0.4);
-  min-width: 28px;  /* keeps alignment consistent for 1-99 */
+  min-width: 28px; /* keeps alignment consistent for 1-99 */
   flex-shrink: 0;
 }
 
@@ -979,7 +979,7 @@ body {
 }
 
 .supporter-card {
-  flex: 1 1 calc(50% - 8px);  /* 2 per row, accounting for gap */
+  flex: 1 1 calc(50% - 8px); /* 2 per row, accounting for gap */
   /* max-width: 300px; */
   min-width: 200px;
   background: #fff;
@@ -989,12 +989,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
 }
 
 .supporter-card:hover {
   border-color: #ccc;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
 .supporter-card img {
@@ -1005,7 +1007,7 @@ body {
 }
 
 .supporter-logo {
-  height: 200px;  /* constrain height, width auto */
+  height: 200px; /* constrain height, width auto */
   width: auto;
   max-width: 200px;
   object-fit: contain;
@@ -1050,16 +1052,24 @@ body {
 }
 
 .sponsor-tier-label::after {
-  content: '';
+  content: "";
   flex: 1;
   height: 1px;
   background: #e0e0e0;
 }
 
-.sponsor-tier-label.bronze { color: #6b5744; }
-.sponsor-tier-label.silver { color: #5a6872; }
-.sponsor-tier-label.gold { color: #8b7330; }
-.sponsor-tier-label.platinum { color: #3d4f5f; }
+.sponsor-tier-label.bronze {
+  color: #6b5744;
+}
+.sponsor-tier-label.silver {
+  color: #5a6872;
+}
+.sponsor-tier-label.gold {
+  color: #8b7330;
+}
+.sponsor-tier-label.platinum {
+  color: #3d4f5f;
+}
 
 /* Divider */
 .section-divider {
@@ -1118,16 +1128,127 @@ body {
 }
 
 .tier-card.bronze::before {
-  background: #8b7355;
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 4px;
+  padding: 2px;
+  background: linear-gradient(
+    90deg,
+    #8b6914,
+    #c9a227,
+    #a67c00,
+    #d4a84b,
+    #8b6914
+  );
+  background-size: 300% 100%;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  animation: gradient-shift 12s linear infinite;
 }
+
 .tier-card.silver::before {
-  background: #7a8b99;
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 4px;
+  padding: 2px;
+  background: linear-gradient(
+    90deg,
+    #6b7b8a,
+    #9aacba,
+    #b8c6d0,
+    #8a9cac,
+    #6b7b8a
+  );
+  background-size: 300% 100%;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  animation: gradient-shift 12s linear infinite;
 }
+
 .tier-card.gold::before {
-  background: #c4a35a;
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 4px;
+  padding: 2px;
+  background: linear-gradient(
+    90deg,
+    #b8860b,
+    #daa520,
+    #ffd700,
+    #daa520,
+    #b8860b
+  );
+  background-size: 300% 100%;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  animation: gradient-shift 12s linear infinite;
+}
+
+.tier-card.platinum {
+  background: #fff;
+  isolation: isolate; /* creates a new stacking context */
 }
 .tier-card.platinum::before {
-  background: #445566;
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 4px;
+  padding: 2px; /* this becomes the border thickness */
+  background: linear-gradient(
+    90deg,
+    #8fa3b8 0%,
+    #d6dee8 14%,
+
+    #7fc4ff 28%,
+    /* prism blue */ #6fb6ff 38%,
+    /* stronger blue */ #b7a4ff 50%,
+    /* violet */ #d7a7ff 58%,
+    /* lilac */ #7fe7dc 70%,
+
+    /* teal */ #d6dee8 86%,
+    #8fa3b8 100%
+  );
+
+  background-size: 300% 100%;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  animation: gradient-shift 12s linear infinite;
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 300% 50%;
+  }
 }
 
 /* Tier Badge */
@@ -1143,27 +1264,34 @@ body {
 }
 
 .tier-card.bronze .tier-badge {
-  background: #f5f0eb;
+  background: linear-gradient(135deg, #f5f0eb 0%, #ebe0d0 100%);
   color: #6b5744;
-  border: 1px solid #d9cfc2;
+  border: 1px solid #c9a227;
 }
 
 .tier-card.silver .tier-badge {
-  background: #f0f3f5;
+  background: linear-gradient(135deg, #f5f7f9 0%, #e4e9ed 100%);
   color: #5a6872;
-  border: 1px solid #c8d0d8;
+  border: 1px solid #9aacba;
 }
 
 .tier-card.gold .tier-badge {
-  background: #faf6eb;
-  color: #8b7330;
-  border: 1px solid #e0d4a8;
+  background: linear-gradient(135deg, #fdf8eb 0%, #f5ecd0 100%);
+  color: #8b6f00;
+  border: 1px solid #daa520;
 }
 
 .tier-card.platinum .tier-badge {
-  background: #f0f2f5;
+  background: linear-gradient(
+    135deg,
+    #ffffff 0%,
+    #f7f9fb 35%,
+    #eef2f6 70%,
+    #ffffff 100%
+  );
   color: #3d4f5f;
-  border: 1px solid #c0c8d0;
+  border: 1px solid #9bb8ff;
+  box-shadow: 0 1px 3px rgba(155, 184, 255, 0.3);
 }
 
 /* Price */
@@ -1264,27 +1392,34 @@ body {
 }
 
 .table-tier-badge.bronze {
-  background: #f5f0eb;
+  background: linear-gradient(135deg, #f5f0eb 0%, #ebe0d0 100%);
   color: #6b5744;
-  border: 1px solid #d9cfc2;
+  border: 1px solid #c9a227;
 }
 
 .table-tier-badge.silver {
-  background: #f0f3f5;
+  background: linear-gradient(135deg, #f5f7f9 0%, #e4e9ed 100%);
   color: #5a6872;
-  border: 1px solid #c8d0d8;
+  border: 1px solid #9aacba;
 }
 
 .table-tier-badge.gold {
-  background: #faf6eb;
-  color: #8b7330;
-  border: 1px solid #e0d4a8;
+  background: linear-gradient(135deg, #fdf8eb 0%, #f5ecd0 100%);
+  color: #8b6f00;
+  border: 1px solid #daa520;
 }
 
 .table-tier-badge.platinum {
-  background: #f0f2f5;
+  background: linear-gradient(
+    135deg,
+    #ffffff 0%,
+    #f7f9fb 35%,
+    #eef2f6 70%,
+    #ffffff 100%
+  );
   color: #3d4f5f;
-  border: 1px solid #c0c8d0;
+  border: 1px solid #9bb8ff;
+  box-shadow: 0 1px 3px rgba(155, 184, 255, 0.3);
 }
 
 /* Benefits list */
