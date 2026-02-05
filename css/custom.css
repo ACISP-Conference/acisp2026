@@ -881,11 +881,26 @@ body {
 }
 
 .paper {
-  margin: 14px 0;
+  margin: 6px 0;
   padding: 14px 16px;
   border: 1px solid rgba(0, 0, 0, 0.12);
   border-radius: 10px;
   background: #fff;
+  display: flex;
+  gap: 16px;
+  align-items: baseline;
+}
+
+.paper-index {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.4);
+  min-width: 28px;  /* keeps alignment consistent for 1-99 */
+  flex-shrink: 0;
+}
+
+.paper-content {
+  flex: 1;
 }
 
 .paper h5 {
@@ -899,10 +914,8 @@ body {
 }
 
 .paper:hover {
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  border-radius: 10px;
+  border-color: rgba(0, 0, 0, 0.8);
 }
-
 .sponsors-content {
   padding: 30px 25px 40px;
 }
