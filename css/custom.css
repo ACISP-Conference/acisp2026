@@ -1037,6 +1037,30 @@ body {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
+/* Sponsor Tier Labels */
+.sponsor-tier-label {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 24px 0 12px 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sponsor-tier-label::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: #e0e0e0;
+}
+
+.sponsor-tier-label.bronze { color: #6b5744; }
+.sponsor-tier-label.silver { color: #5a6872; }
+.sponsor-tier-label.gold { color: #8b7330; }
+.sponsor-tier-label.platinum { color: #3d4f5f; }
+
 /* Divider */
 .section-divider {
   border: 0;
