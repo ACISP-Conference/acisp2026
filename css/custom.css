@@ -1046,16 +1046,21 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.08em;
   margin: 24px 0 12px 0;
+
   display: flex;
   align-items: center;
+  justify-content: center; /* centers the text */
   gap: 12px;
+  text-align: center;
 }
 
+
+.sponsor-tier-label::before,
 .sponsor-tier-label::after {
   content: "";
   flex: 1;
   height: 1px;
-  background: #e0e0e0;
+  background: rgba(0, 0, 0, 0.18); /* tweak */
 }
 
 .sponsor-tier-label.bronze {
@@ -1115,18 +1120,14 @@ body {
   flex: 1;
   background: #fff;
   border: 1px solid #ddd;
-  border-radius: 4px;
   padding: 20px 16px;
   text-align: center;
   position: relative;
   transition: all 0.2s ease;
+  border-radius: 4px;
+  overflow: hidden  ;
 }
 
-.tier-card:hover {
-  border-color: #bbb;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  transform: translateY(-2px);
-}
 
 /* Top accent bar */
 .tier-card::before {
@@ -1136,14 +1137,12 @@ body {
   left: 0;
   right: 0;
   height: 3px;
-  border-radius: 4px 4px 0 0;
 }
 
 .tier-card.bronze::before {
   content: "";
   position: absolute;
   inset: 0;
-  border-radius: 4px;
   padding: 2px;
   background: linear-gradient(
     90deg,
@@ -1169,7 +1168,6 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  border-radius: 4px;
   padding: 2px;
   background: linear-gradient(
     90deg,
@@ -1195,15 +1193,14 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  border-radius: 4px;
   padding: 2px;
   background: linear-gradient(
     90deg,
-    #b8860b,
-    #daa520,
-    #ffd700,
-    #daa520,
-    #b8860b
+    #dea805,
+    #efb11a,
+    #ffdf2a,
+    #efb11a,
+    #e1ad10
   );
   background-size: 300% 100%;
   -webkit-mask:
@@ -1225,7 +1222,6 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  border-radius: 4px;
   padding: 2px; /* this becomes the border thickness */
   background: linear-gradient(
     90deg,
@@ -1383,9 +1379,6 @@ body {
   border-bottom: none;
 }
 
-.benefits-table > tbody > tr:hover {
-  background: #fcfcfc;
-}
 
 /* Tier column */
 .benefits-table .tier-col {
