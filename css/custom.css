@@ -1068,7 +1068,19 @@ body {
   color: #8b7330;
 }
 .sponsor-tier-label.platinum {
-  color: #3d4f5f;
+  background: linear-gradient(
+    90deg,
+    #4a5d6e,
+    #5a7abf,
+    #7a5abf,
+    #3a9a96,
+    #5a7abf
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradient-shift 12s linear infinite;
 }
 
 /* Divider */
