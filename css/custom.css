@@ -1059,13 +1059,13 @@ body {
 }
 
 .sponsor-tier-label.bronze {
-  color: #6b5744;
+  color: #775739;
 }
 .sponsor-tier-label.silver {
-  color: #5a6872;
+  color: #456378;
 }
 .sponsor-tier-label.gold {
-  color: #8b7330;
+  color: #bb8c0b;
 }
 .sponsor-tier-label.platinum {
   background: linear-gradient(
