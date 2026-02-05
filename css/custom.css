@@ -913,9 +913,6 @@ body {
   color: rgba(0, 0, 0, 0.72);
 }
 
-.paper:hover {
-  border-color: rgba(0, 0, 0, 0.8);
-}
 .sponsors-content {
   padding: 30px 25px 40px;
 }
