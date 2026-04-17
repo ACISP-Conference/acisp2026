@@ -977,7 +977,7 @@ body {
 
 .supporter-card {
   flex: 1 1 calc(50% - 8px); /* 2 per row, accounting for gap */
-  /* max-width: 300px; */
+  max-width: calc(50% - 8px);
   min-width: 200px;
   background: #fff;
   border: 1px solid #e0e0e0;
