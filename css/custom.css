@@ -1657,8 +1657,45 @@ body {
   background: #a0b0c4;
   flex-shrink: 0;
 }
- 
 
+.accommodation-intro {
+  margin-bottom: 1.5rem;
+}
+
+.hotel-featured-block {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #eee;
+}
+
+.hotel-featured-block:last-of-type {
+  border-bottom: none;
+}
+
+.hotel-featured-block h3 {
+  margin-top: 0;
+}
+
+.hotel-featured-img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  display: block;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 992px) {
+  .hotel-featured-block:nth-of-type(even) .row {
+    display: flex;
+    align-items: center;
+  }
+
+  .hotel-featured-block:nth-of-type(odd) .row {
+    display: flex;
+    align-items: center;
+  }
+}
 
 /* ── Responsive ─────────────────────────────────── */
 @media (max-width: 560px) {
