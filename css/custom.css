@@ -880,6 +880,39 @@ body {
   text-decoration: underline;
 }
 
+.accepted-toc {
+  margin: 0 0 18px 0;
+  padding: 10px 12px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 6px;
+  background: #f7fbff;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  align-items: center;
+}
+
+.accepted-toc span {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.72);
+}
+
+.accepted-toc ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+}
+
+.accepted-toc li {
+  margin: 0;
+}
+
+.accepted-toc a {
+  font-weight: 600;
+}
+
 .paper {
   margin: 8px 0;
   padding: 14px 16px;
