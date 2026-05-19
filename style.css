@@ -137,6 +137,7 @@ ul {
 /**************************************************/
 #stuff {
   flex: 3 1 700px;
+  min-width: 0;
   padding-bottom: 55px;
   padding-left: 10px;
 }

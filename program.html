@@ -161,149 +161,398 @@
           <h2>Conference Program</h2>
           <hr />
 
-          <div class="program-table-wrap">
-            <table class="program-table" cellspacing="0">
-              <thead>
-                  <tr>
-                    <th>7-Jul</th>
-                    <th>8-Jul</th>
-                    <th>9-Jul</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>
-                      <strong>8.30am start Morning Ceremony</strong> (30 mins)
-                    </td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-              
-                  <tr>
-                    <td>
-                      <strong>Keynote 1: Vinod Vaikuntanathan</strong><br />
-                      9.00am - 10.00am
-                    </td>
-                    <td>
-                      <strong>JS Lecture: Fuchun Guo</strong><br />
-                      9.00am - 10.00am
-                    </td>
-                    <td>
-                      <strong>Keynote 3: Robert H. Deng</strong><br />
-                      9.00am - 10.00am
-                    </td>
-                  </tr>
-              
-                  <tr>
-                    <td><strong>Morning tea</strong> (10.00am - 10.20am)</td>
-                    <td><strong>Morning tea</strong> (10.00am - 10.20am)</td>
-                    <td><strong>Morning tea</strong> (10.00am - 10.20am)</td>
-                  </tr>
-              
-                  <tr>
-                    <td>
-                      <strong>Parallel Sessions 1</strong> (10.20am - 11.40am):<br />
-                      - (regular) Backdoors<br />
-                      - (regular) Identity-Based and Public-Key Cryptography
-                    </td>
-                    <td>
-                      <strong>Parallel Sessions 5</strong> (10.20am - 11.40am):<br />
-                      - (regular) Authentication &amp; User Security<br />
-                      - (regular) Security Models and Access Control
-                    </td>
-                    <td>
-                      <strong>Parallel Sessions 8</strong> (10.20am - 11.40am):<br />
-                      - (regular) Unlearning &amp; Model Reliability<br />
-                      - (regular) Lattice-Based Cryptography and Post-Quantum Security
-                    </td>
-                  </tr>
-              
-                  <tr>
-                    <td><strong>Lunch</strong> (11.40am - 12.40pm)</td>
-                    <td><strong>Lunch</strong> (11.40am - 12.40pm)</td>
-                    <td><strong>Lunch</strong> (11.40am - 12.40pm)</td>
-                  </tr>
-              
-                  <tr>
-                    <td>
-                      <strong>Parallel Sessions 2</strong> (12.40pm - 2.00pm):<br />
-                      - (regular) AI &amp; Security<br />
-                      - (regular) Cryptanalytic Methods and Attacks
-                    </td>
-                    <td>
-                      <strong>Keynote 2: Elisabeth Oswald</strong><br />
-                      12.40pm - 1.40pm
-                    </td>
-                    <td>
-                      <strong>Industry Invited Talks</strong> (12.40pm - 1.40pm)
-                    </td>
-                  </tr>
-              
-                  <tr>
-                    <td>
-                      <strong>Parallel Sessions 3</strong> (2.00pm - 3.20pm):<br />
-                      - (regular) Intrusion Detection &amp; Anomaly Analysis<br />
-                      - (regular) Zero Knowledge, Commitments and MPC
-                    </td>
-                    <td>
-                      <strong>Parallel Sessions 6</strong> (1.40pm - 3.00pm):<br />
-                      - (regular) Cryptanalysis of Symmetric Primitives<br />
-                      - (regular) Privacy
-                    </td>
-                    <td>
-                      <strong>Parallel Sessions 9</strong> (1.40pm - 3.00pm):<br />
-                      - (regular) Network Traffic Analysis &amp; Detection<br />
-                      - (regular) Secure Systems and Trusted Execution
-                    </td>
-                  </tr>
-              
-                  <tr>
-                    <td><strong>Afternoon tea</strong> (3.20pm - 3.40pm)</td>
-                    <td><strong>Afternoon tea</strong> (3.00pm - 3.20pm)</td>
-                    <td><strong>Afternoon tea</strong> (3.00pm - 3.10pm)</td>
-                  </tr>
-              
-                  <tr>
-                    <td>
-                      <strong>Parallel Sessions 4</strong> (3.40pm - 5.20pm):<br />
-                      - (regular) Smart Contracts and Blockchain Security<br />
-                      - (Industry) Security of Distributed Systems
-                    </td>
-                    <td>
-                      <strong>Parallel Sessions 7</strong> (3.20pm - 5.00pm):<br />
-                      - (regular) Threshold, Traceable, and Secure Protocols<br />
-                      - (Industry) Applied Cryptography
-                    </td>
-                    <td>
-                      <strong>Parallel Sessions 10</strong> (3.10pm - 3.50pm):<br />
-                      - (Student) Student Symposium (2)<br />
-                      - (Industry) Networked Systems Security (a) (2)
-                    </td>
-                  </tr>
-              
-                  <tr>
-                    <td></td>
-                    <td></td>
-                    <td>
-                      <strong>Parallel Sessions 11</strong> (3.50pm - 4.50pm):<br />
-                      - (regular) Threat Detection and Adversarial Analysis (3)<br />
-                      - (Industry) Networked Systems Security (b) (2)
-                    </td>
-                  </tr>
-              
-                  <tr>
-                    <td></td>
-                    <td><strong>Bus to banquet</strong> (5.20pm, 5.40pm)</td>
-                    <td><strong>Closing</strong> (4.50pm - 5.10pm)</td>
-                  </tr>
-              
-                  <tr>
-                    <td></td>
-                    <td><strong>Banquet</strong> (6pm - 10pm)</td>
-                    <td></td>
-                  </tr>
-              </tbody>
-            </table>
+          <p class="program-intro" id="program-overview">
+            Select a day to view its schedule. Session topics link to the list
+            of talks and authors below.
+          </p>
+
+          <div class="program-day-tabs">
+            <ul class="program-tabs" role="tablist">
+              <li class="active" role="presentation">
+                <a
+                  href="program.html#program-day-7"
+                  aria-controls="program-day-7"
+                  role="tab"
+                  data-toggle="tab"
+                >Tuesday 7 July</a>
+              </li>
+              <li role="presentation">
+                <a
+                  href="program.html#program-day-8"
+                  aria-controls="program-day-8"
+                  role="tab"
+                  data-toggle="tab"
+                >Wednesday 8 July</a>
+              </li>
+              <li role="presentation">
+                <a
+                  href="program.html#program-day-9"
+                  aria-controls="program-day-9"
+                  role="tab"
+                  data-toggle="tab"
+                >Thursday 9 July</a>
+              </li>
+            </ul>
+
+            <div class="program-day-panels tab-content">
+              <div
+                class="program-day-panel tab-pane active"
+                id="program-day-7"
+                role="tabpanel"
+              >
+                <table
+                  class="program-table program-day-table"
+                  cellspacing="0"
+                  aria-describedby="program-overview"
+                >
+                  <caption>Tuesday 7 July schedule</caption>
+                  <colgroup>
+                    <col class="program-time-col" />
+                    <col />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th scope="col">Time</th>
+                      <th scope="col">Session</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row" class="program-time-slot">8.30am - 9.00am</th>
+                      <td>
+                        <div class="program-event program-event-special">
+                          <strong>Morning Ceremony</strong>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="program-time-slot">9.00am - 10.00am</th>
+                      <td>
+                        <div class="program-event program-event-keynote">
+                          <strong>Keynote 1</strong>
+                          <span>Vinod Vaikuntanathan</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="program-time-slot">10.00am - 10.20am</th>
+                      <td>
+                        <div class="program-event program-event-break">
+                          <strong>Morning tea</strong>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="program-time-slot">10.20am - 11.40am</th>
+                      <td>
+                        <div class="program-event">
+                          <strong>Parallel Sessions 1</strong>
+                          <ul>
+                            <li><a href="program.html#session-backdoors">Backdoors</a></li>
+                            <li><a href="program.html#session-identity-public-key">Identity-Based and Public-Key Cryptography</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="program-time-slot">11.40am - 12.40pm</th>
+                      <td>
+                        <div class="program-event program-event-break">
+                          <strong>Lunch</strong>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="program-time-slot">12.40pm - 2.00pm</th>
+                      <td>
+                        <div class="program-event">
+                          <strong>Parallel Sessions 2</strong>
+                          <ul>
+                            <li><a href="program.html#session-ai-security">AI &amp; Security</a></li>
+                            <li><a href="program.html#session-cryptanalytic-methods">Cryptanalytic Methods and Attacks</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="program-time-slot">2.00pm - 3.20pm</th>
+                      <td>
+                        <div class="program-event">
+                          <strong>Parallel Sessions 3</strong>
+                          <ul>
+                            <li><a href="program.html#session-intrusion-anomaly">Intrusion Detection &amp; Anomaly Analysis</a></li>
+                            <li><a href="program.html#session-zero-knowledge-mpc">Zero Knowledge, Commitments and MPC</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="program-time-slot">3.20pm - 3.40pm</th>
+                      <td>
+                        <div class="program-event program-event-break">
+                          <strong>Afternoon tea</strong>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="program-time-slot">3.40pm - 5.20pm</th>
+                      <td>
+                        <div class="program-event">
+                          <strong>Parallel Sessions 4</strong>
+                          <ul>
+                            <li><a href="program.html#session-smart-contracts">Smart Contracts and Blockchain Security</a></li>
+                            <li><a href="program.html#session-distributed-systems">Security of Distributed Systems</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div
+                class="program-day-panel tab-pane"
+                id="program-day-8"
+                role="tabpanel"
+              >
+                <table
+                  class="program-table program-day-table"
+                  cellspacing="0"
+                  aria-describedby="program-overview"
+                >
+                  <caption>Wednesday 8 July schedule</caption>
+                  <colgroup>
+                    <col class="program-time-col" />
+                    <col />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th scope="col">Time</th>
+                      <th scope="col">Session</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row" class="program-time-slot">9.00am - 10.00am</th>
+                      <td>
+                        <div class="program-event program-event-keynote">
+                          <strong>JS Lecture</strong>
+                          <span>Fuchun Guo</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="program-time-slot">10.00am - 10.20am</th>
+                      <td>
+                        <div class="program-event program-event-break">
+                          <strong>Morning tea</strong>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="program-time-slot">10.20am - 11.40am</th>
+                      <td>
+                        <div class="program-event">
+                          <strong>Parallel Sessions 5</strong>
+                          <ul>
+                            <li><a href="program.html#session-authentication-user-security">Authentication &amp; User Security</a></li>
+                            <li><a href="program.html#session-security-models-access-control">Security Models and Access Control</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="program-time-slot">11.40am - 12.40pm</th>
+                      <td>
+                        <div class="program-event program-event-break">
+                          <strong>Lunch</strong>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="program-time-slot">12.40pm - 1.40pm</th>
+                      <td>
+                        <div class="program-event program-event-keynote">
+                          <strong>Keynote 2</strong>
+                          <span>Elisabeth Oswald</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="program-time-slot">1.40pm - 3.00pm</th>
+                      <td>
+                        <div class="program-event">
+                          <strong>Parallel Sessions 6</strong>
+                          <ul>
+                            <li><a href="program.html#session-symmetric-cryptanalysis">Cryptanalysis of Symmetric Primitives</a></li>
+                            <li><a href="program.html#session-privacy">Privacy</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="program-time-slot">3.00pm - 3.20pm</th>
+                      <td>
+                        <div class="program-event program-event-break">
+                          <strong>Afternoon tea</strong>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="program-time-slot">3.20pm - 5.00pm</th>
+                      <td>
+                        <div class="program-event">
+                          <strong>Parallel Sessions 7</strong>
+                          <ul>
+                            <li><a href="program.html#session-threshold-protocols">Threshold, Traceable, and Secure Protocols</a></li>
+                            <li><a href="program.html#session-applied-cryptography">Applied Cryptography</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="program-time-slot">5.20pm, 5.40pm</th>
+                      <td>
+                        <div class="program-event program-event-special">
+                          <strong>Bus to banquet</strong>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="program-time-slot">6.00pm - 10.00pm</th>
+                      <td>
+                        <div class="program-event program-event-banquet">
+                          <strong>Banquet</strong>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div
+                class="program-day-panel tab-pane"
+                id="program-day-9"
+                role="tabpanel"
+              >
+                <table
+                  class="program-table program-day-table"
+                  cellspacing="0"
+                  aria-describedby="program-overview"
+                >
+                  <caption>Thursday 9 July schedule</caption>
+                  <colgroup>
+                    <col class="program-time-col" />
+                    <col />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th scope="col">Time</th>
+                      <th scope="col">Session</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row" class="program-time-slot">9.00am - 10.00am</th>
+                      <td>
+                        <div class="program-event program-event-keynote">
+                          <strong>Keynote 3</strong>
+                          <span>Robert H. Deng</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="program-time-slot">10.00am - 10.20am</th>
+                      <td>
+                        <div class="program-event program-event-break">
+                          <strong>Morning tea</strong>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="program-time-slot">10.20am - 11.40am</th>
+                      <td>
+                        <div class="program-event">
+                          <strong>Parallel Sessions 8</strong>
+                          <ul>
+                            <li><a href="program.html#session-unlearning-model-reliability">Unlearning &amp; Model Reliability</a></li>
+                            <li><a href="program.html#session-lattice-post-quantum">Lattice-Based Cryptography and Post-Quantum Security</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="program-time-slot">11.40am - 12.40pm</th>
+                      <td>
+                        <div class="program-event program-event-break">
+                          <strong>Lunch</strong>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="program-time-slot">12.40pm - 1.40pm</th>
+                      <td>
+                        <div class="program-event program-event-special">
+                          <strong>Industry Invited Talks</strong>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="program-time-slot">1.40pm - 3.00pm</th>
+                      <td>
+                        <div class="program-event">
+                          <strong>Parallel Sessions 9</strong>
+                          <ul>
+                            <li><a href="program.html#session-network-traffic">Network Traffic Analysis &amp; Detection</a></li>
+                            <li><a href="program.html#session-secure-systems">Secure Systems and Trusted Execution</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="program-time-slot">3.00pm - 3.10pm</th>
+                      <td>
+                        <div class="program-event program-event-break">
+                          <strong>Afternoon tea</strong>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="program-time-slot">3.10pm - 3.50pm</th>
+                      <td>
+                        <div class="program-event">
+                          <strong>Parallel Sessions 10</strong>
+                          <ul>
+                            <li><a href="program.html#session-student-symposium">Student Symposium</a></li>
+                            <li><a href="program.html#session-networked-systems-security">Networked Systems Security (a)</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="program-time-slot">3.50pm - 4.50pm</th>
+                      <td>
+                        <div class="program-event">
+                          <strong>Parallel Sessions 11</strong>
+                          <ul>
+                            <li><a href="program.html#session-threat-detection">Threat Detection and Adversarial Analysis</a></li>
+                            <li><a href="program.html#session-networked-systems-security">Networked Systems Security (b)</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="program-time-slot">4.50pm - 5.10pm</th>
+                      <td>
+                        <div class="program-event program-event-special">
+                          <strong>Closing</strong>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
 
           <div class="program-session-details">
@@ -312,7 +561,7 @@
             <h4>Research Track Sessions</h4>
 
             <div class="program-session-grid">
-              <div class="program-session">
+              <div class="program-session" id="session-backdoors" tabindex="-1">
                 <h5>Session 1: Backdoors</h5>
                 <ol>
                   <li>
@@ -334,7 +583,7 @@
                 </ol>
               </div>
 
-              <div class="program-session">
+              <div class="program-session" id="session-identity-public-key" tabindex="-1">
                 <h5>Session 1: Identity-Based and Public-Key Cryptography</h5>
                 <ol>
                   <li>
@@ -356,7 +605,7 @@
                 </ol>
               </div>
 
-              <div class="program-session">
+              <div class="program-session" id="session-ai-security" tabindex="-1">
                 <h5>Session 2: AI &amp; Security</h5>
                 <ol>
                   <li>
@@ -378,7 +627,7 @@
                 </ol>
               </div>
 
-              <div class="program-session">
+              <div class="program-session" id="session-cryptanalytic-methods" tabindex="-1">
                 <h5>Session 2: Cryptanalytic Methods and Attacks</h5>
                 <ol>
                   <li>
@@ -400,7 +649,7 @@
                 </ol>
               </div>
 
-              <div class="program-session">
+              <div class="program-session" id="session-intrusion-anomaly" tabindex="-1">
                 <h5>Session 3: Intrusion Detection &amp; Anomaly Analysis</h5>
                 <ol>
                   <li>
@@ -422,7 +671,7 @@
                 </ol>
               </div>
 
-              <div class="program-session">
+              <div class="program-session" id="session-zero-knowledge-mpc" tabindex="-1">
                 <h5>Session 3: Zero Knowledge, Commitments, and MPC</h5>
                 <ol>
                   <li>
@@ -444,7 +693,7 @@
                 </ol>
               </div>
 
-              <div class="program-session">
+              <div class="program-session" id="session-smart-contracts" tabindex="-1">
                 <h5>Session 4: Smart Contracts and Blockchain Security</h5>
                 <ol>
                   <li>
@@ -470,7 +719,7 @@
                 </ol>
               </div>
 
-              <div class="program-session">
+              <div class="program-session" id="session-authentication-user-security" tabindex="-1">
                 <h5>Session 5: Authentication &amp; User Security</h5>
                 <ol>
                   <li>
@@ -492,7 +741,7 @@
                 </ol>
               </div>
 
-              <div class="program-session">
+              <div class="program-session" id="session-symmetric-cryptanalysis" tabindex="-1">
                 <h5>Session 6: Cryptanalysis of Symmetric Primitives</h5>
                 <ol>
                   <li>
@@ -514,7 +763,7 @@
                 </ol>
               </div>
 
-              <div class="program-session">
+              <div class="program-session" id="session-privacy" tabindex="-1">
                 <h5>Session 6: Privacy</h5>
                 <ol>
                   <li>
@@ -536,7 +785,7 @@
                 </ol>
               </div>
 
-              <div class="program-session">
+              <div class="program-session" id="session-threshold-protocols" tabindex="-1">
                 <h5>Session 7: Threshold, Traceable, and Secure Protocols</h5>
                 <ol>
                   <li>
@@ -562,7 +811,7 @@
                 </ol>
               </div>
 
-              <div class="program-session">
+              <div class="program-session" id="session-lattice-post-quantum" tabindex="-1">
                 <h5>Session 8: Lattice-Based Cryptography and Post-Quantum Security</h5>
                 <ol>
                   <li>
@@ -584,7 +833,7 @@
                 </ol>
               </div>
 
-              <div class="program-session">
+              <div class="program-session" id="session-unlearning-model-reliability" tabindex="-1">
                 <h5>Session 8: Unlearning &amp; Model Reliability</h5>
                 <ol>
                   <li>
@@ -606,7 +855,7 @@
                 </ol>
               </div>
 
-              <div class="program-session">
+              <div class="program-session" id="session-network-traffic" tabindex="-1">
                 <h5>Session 9: Network Traffic Analysis &amp; Detection</h5>
                 <ol>
                   <li>
@@ -628,7 +877,7 @@
                 </ol>
               </div>
 
-              <div class="program-session">
+              <div class="program-session" id="session-secure-systems" tabindex="-1">
                 <h5>Session 9: Secure Systems and Trusted Execution</h5>
                 <ol>
                   <li>
@@ -650,7 +899,7 @@
                 </ol>
               </div>
 
-              <div class="program-session">
+              <div class="program-session" id="session-security-models-access-control" tabindex="-1">
                 <h5>Session 10: Security Models and Access Control</h5>
                 <ol>
                   <li>
@@ -672,7 +921,7 @@
                 </ol>
               </div>
 
-              <div class="program-session">
+              <div class="program-session" id="session-threat-detection" tabindex="-1">
                 <h5>Session 10: Threat Detection and Adversarial Analysis</h5>
                 <ol>
                   <li>
@@ -694,7 +943,7 @@
             <h4>Industry Track Sessions</h4>
 
             <div class="program-session-grid">
-              <div class="program-session">
+              <div class="program-session" id="session-distributed-systems" tabindex="-1">
                 <h5>Session 4: Security of Distributed Systems</h5>
                 <ol>
                   <li>
@@ -720,7 +969,7 @@
                 </ol>
               </div>
 
-              <div class="program-session">
+              <div class="program-session" id="session-applied-cryptography" tabindex="-1">
                 <h5>Session 7: Applied Cryptography</h5>
                 <ol>
                   <li>
@@ -746,7 +995,7 @@
                 </ol>
               </div>
 
-              <div class="program-session">
+              <div class="program-session" id="session-networked-systems-security" tabindex="-1">
                 <h5>Session 11: Networked Systems Security</h5>
                 <ol>
                   <li>
@@ -772,7 +1021,7 @@
             <h4>Student Symposium</h4>
 
             <div class="program-session-grid">
-              <div class="program-session">
+              <div class="program-session" id="session-student-symposium" tabindex="-1">
                 <h5>Session 5: Student Symposium</h5>
                 <ol>
                   <li>
