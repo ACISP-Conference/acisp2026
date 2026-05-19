@@ -1578,13 +1578,20 @@ body {
   margin-bottom: 0.8rem;
 }
 
+.keynote-schedule {
+  font-size: 1.3rem;
+  color: #777;
+  margin: 0;
+  font-weight: 400;
+}
+
 .keynote-talk-title {
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 300;
   color: #1a1a1a;
   border-top: 1px solid #e8e8e8;
   padding-top: 0.65rem;
-  font-style: italic;
+  margin-bottom: 0.1rem;
 }
 
 /* Body: abstract + bio */
