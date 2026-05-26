@@ -1578,13 +1578,20 @@ body {
   margin-bottom: 0.8rem;
 }
 
+.keynote-schedule {
+  font-size: 1.3rem;
+  color: #777;
+  margin: 0;
+  font-weight: 400;
+}
+
 .keynote-talk-title {
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 300;
   color: #1a1a1a;
   border-top: 1px solid #e8e8e8;
   padding-top: 0.65rem;
-  font-style: italic;
+  margin-bottom: 0.1rem;
 }
 
 /* Body: abstract + bio */
@@ -1738,5 +1745,356 @@ body {
   .keynote-photo-wrap {
     width: 100%;
     max-height: 240px;
+  }
+}
+
+
+.program-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  table-layout: fixed;
+  border: 1px solid #ddd;
+  background: #fff;
+}
+
+.program-time-col {
+  width: 150px;
+}
+
+.program-day-tabs {
+  max-width: 100%;
+  width: 100%;
+}
+
+.program-intro {
+  margin: 0 0 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.program-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.program-tabs li {
+  margin: 0;
+}
+
+.program-tabs a {
+  display: block;
+  padding: 9px 14px;
+  border: 1px solid #ddd;
+  border-bottom: none;
+  background: #f6f8fa;
+  color: #2f4f68;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.program-tabs a:hover,
+.program-tabs a:focus {
+  background: #edf3f7;
+  color: #19384f;
+  outline: 2px solid #7d9bad;
+  outline-offset: 2px;
+  text-decoration: underline;
+}
+
+.program-tabs .active a {
+  background: #ffffff;
+  border-color: #c9d5dc;
+  border-top: 4px solid #5f879c;
+  color: #17324d;
+  margin-bottom: -1px;
+}
+
+.program-day-panels {
+  border: 1px solid #ddd;
+  border-top: none;
+  background: #fff;
+  padding: 12px;
+}
+
+.program-day-panel {
+  max-width: 100%;
+}
+
+.program-day-table {
+  border: none;
+}
+
+.program-table caption {
+  padding: 10px 12px;
+  text-align: left;
+  font-weight: 700;
+  color: #243746;
+  background: linear-gradient(135deg, #f8fafb 0%, #eef3f6 100%);
+  border-bottom: 1px solid #ddd;
+}
+
+.program-table th,
+.program-table td {
+  border: 1px solid #e5e5e5;
+  padding: 10px;
+  vertical-align: top;
+  text-align: left;
+  line-height: 1.45;
+}
+
+.program-table th {
+  font-weight: 700;
+  background: #f4f7f9;
+  color: #3d4f5f;
+  text-align: center;
+}
+
+.program-time-slot {
+  background: #f7f9fa;
+  color: #3d4f5f;
+  font-size: 13px;
+  line-height: 1.35;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.program-empty {
+  color: #888;
+  font-style: italic;
+  background: #f7f8fa;
+  font-size: 12px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.program-event {
+  min-height: 100%;
+}
+
+.program-event strong,
+.program-event span,
+.program-event .program-time {
+  display: block;
+}
+
+.program-event strong {
+  color: #222;
+  font-size: 14px;
+}
+
+.program-event span,
+.program-event .program-time {
+  margin-top: 3px;
+  color: #666;
+}
+
+.program-event ul {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+}
+
+.program-event li + li {
+  margin-top: 6px;
+}
+
+.program-event a {
+  display: block;
+  padding: 6px 8px;
+  border-left: 3px solid #5f879c;
+  background: #f2f7fa;
+  color: #2d5f7a;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.program-event a:hover,
+.program-event a:focus {
+  background: #e4eff5;
+  color: #173f57;
+  text-decoration: underline;
+  outline: 2px solid #5f879c;
+  outline-offset: 2px;
+}
+
+.program-event-keynote {
+  border-left: 4px solid #c9951a;
+  padding-left: 10px;
+}
+
+.program-event-keynote strong {
+  color: #6b5744;
+}
+
+.program-event-keynote a {
+  border-left: none;
+  background: #fff8e6;
+  color: #7a5310;
+}
+
+.program-event-keynote a:hover,
+.program-event-keynote a:focus {
+  background: #f7edcf;
+  color: #5d3e09;
+  outline-color: #c9951a;
+}
+
+.program-event-break {
+  border-left: 4px solid #7fa184;
+  padding-left: 10px;
+}
+
+.program-event-break strong {
+  color: #466b4c;
+}
+
+.program-event-special {
+  border-left: 4px solid #8fa3b8;
+  padding-left: 10px;
+}
+
+.program-event-special strong {
+  color: #3d4f5f;
+}
+
+.program-event-special a {
+  border-left: none;
+  background: #f3f7fa;
+  color: #3d4f5f;
+}
+
+.program-event-special a:hover,
+.program-event-special a:focus {
+  background: #e6eef4;
+  color: #243746;
+  outline-color: #8fa3b8;
+}
+
+.program-event-banquet {
+  border-left: 4px solid #8f6fa8;
+  padding-left: 10px;
+}
+
+.program-event-banquet strong {
+  color: #5f4775;
+}
+
+.program-event-banquet a {
+  border-left: none;
+  background: #f6effa;
+  color: #5f4775;
+}
+
+.program-event-banquet a:hover,
+.program-event-banquet a:focus {
+  background: #eadcf2;
+  color: #463059;
+  outline-color: #8f6fa8;
+}
+
+@media (max-width: 767px) {
+  .program-time-col {
+    width: 112px;
+  }
+
+  .program-day-panels {
+    padding: 8px;
+  }
+
+  .program-table th,
+  .program-table td {
+    padding: 8px;
+  }
+
+  .program-event a {
+    padding: 7px 8px;
+  }
+}
+
+.program-session-details {
+  max-width: 100%;
+  margin-top: 34px;
+}
+
+.program-session-details h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.program-session-details h4 {
+  margin: 30px 0 14px;
+  padding: 9px 12px;
+  border-left: 5px solid #5f879c;
+  background: #f4f7f9;
+  color: #243746;
+}
+
+.program-session-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.program-session {
+  scroll-margin-top: 18px;
+  border: 1px solid #ddd;
+  border-top: 4px solid #5f879c;
+  background: #fff;
+  padding: 16px 18px;
+  box-shadow: 0 1px 2px rgba(31, 41, 51, 0.06);
+}
+
+.program-session:focus {
+  outline: 3px solid #5f879c;
+  outline-offset: 3px;
+}
+
+.program-session:target {
+  border-color: #5f879c;
+}
+
+.program-session h5 {
+  margin: 0 0 12px;
+  font-size: 16px;
+  line-height: 1.35;
+  color: #333;
+}
+
+.program-session ol {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.program-session li {
+  margin-bottom: 14px;
+  line-height: 1.4;
+}
+
+.program-session li:last-child {
+  margin-bottom: 0;
+}
+
+.program-session strong {
+  display: block;
+  font-weight: 600;
+  color: #222;
+}
+
+.program-session span {
+  display: block;
+  margin-top: 4px;
+  color: #666;
+}
+
+@media (max-width: 991px) {
+  .program-session-grid {
+    grid-template-columns: 1fr;
   }
 }
