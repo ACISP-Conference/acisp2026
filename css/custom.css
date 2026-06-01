@@ -1980,6 +1980,19 @@ body {
   color: #6b5744;
 }
 
+.program-event-keynote a {
+  border-left: none;
+  background: #fff8e6;
+  color: #7a5310;
+}
+
+.program-event-keynote a:hover,
+.program-event-keynote a:focus {
+  background: #f7edcf;
+  color: #5d3e09;
+  outline-color: #c9951a;
+}
+
 .program-event-break {
   border-left: 4px solid #7fa184;
   padding-left: 10px;
@@ -1998,6 +2011,19 @@ body {
   color: #3d4f5f;
 }
 
+.program-event-special a {
+  border-left: none;
+  background: #f3f7fa;
+  color: #3d4f5f;
+}
+
+.program-event-special a:hover,
+.program-event-special a:focus {
+  background: #e6eef4;
+  color: #243746;
+  outline-color: #8fa3b8;
+}
+
 .program-event-banquet {
   border-left: 4px solid #8f6fa8;
   padding-left: 10px;
@@ -2005,6 +2031,19 @@ body {
 
 .program-event-banquet strong {
   color: #5f4775;
+}
+
+.program-event-banquet a {
+  border-left: none;
+  background: #f6effa;
+  color: #5f4775;
+}
+
+.program-event-banquet a:hover,
+.program-event-banquet a:focus {
+  background: #eadcf2;
+  color: #463059;
+  outline-color: #8f6fa8;
 }
 
 @media (max-width: 767px) {
