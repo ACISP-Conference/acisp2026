@@ -1735,6 +1735,10 @@ body {
   margin: 0.75rem 0 1rem;
 }
 
+.perth-attraction-img-wide {
+  height: auto;
+}
+
 .perth-image-credits {
   color: #666;
   font-size: 12px;
