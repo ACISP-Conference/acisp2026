@@ -880,6 +880,123 @@ body {
   text-decoration: underline;
 }
 
+.presenter-instructions {
+  margin: 22px 0;
+  padding: 18px 20px;
+  border: 1px solid #d6e0ea;
+  border-left: 5px solid #5f879c;
+  border-radius: 6px;
+  background: #f7fbff;
+}
+
+.presenter-instructions h3 {
+  margin-top: 0;
+}
+
+.presenter-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  margin: 16px 0;
+}
+
+.presenter-summary-item {
+  min-height: 82px;
+  padding: 12px;
+  border: 1px solid #d6e0ea;
+  border-radius: 4px;
+  background: #fff;
+}
+
+.presenter-summary-item span,
+.presenter-summary-item strong {
+  display: block;
+}
+
+.presenter-summary-item span {
+  color: #5b6875;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.presenter-summary-item strong {
+  margin-top: 6px;
+  color: #243746;
+  font-size: 18px;
+  line-height: 1.25;
+}
+
+.presenter-two-col {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.presenter-panel {
+  padding: 14px 16px;
+  border: 1px solid #e0e6eb;
+  border-radius: 4px;
+  background: #fff;
+}
+
+.presenter-panel h4 {
+  margin: 0 0 8px;
+  color: #243746;
+}
+
+.presenter-panel p,
+.presenter-panel ul {
+  margin-bottom: 0;
+}
+
+.presenter-panel ul {
+  padding-left: 20px;
+}
+
+.presenter-contact {
+  margin: 16px 0 0;
+}
+
+.presenter-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 16px 0 0;
+}
+
+.program-presenter-callout {
+  margin: 0 0 16px;
+  padding: 12px 14px;
+  border: 1px solid #d6e0ea;
+  border-left: 4px solid #5f879c;
+  border-radius: 4px;
+  background: #f7fbff;
+}
+
+.program-presenter-callout p {
+  margin: 0;
+}
+
+.program-presenter-callout a {
+  font-weight: 700;
+}
+
+@media (max-width: 991px) {
+  .presenter-summary-grid,
+  .presenter-two-col {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .presenter-summary-grid,
+  .presenter-two-col {
+    grid-template-columns: 1fr;
+  }
+}
+
 .accepted-toc {
   margin: 0 0 18px 0;
   padding: 10px 12px;
