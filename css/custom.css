@@ -2230,10 +2230,17 @@ body {
 }
 
 .program-session h5 {
-  margin: 0 0 12px;
+  margin: 0 0 4px;
   font-size: 16px;
   line-height: 1.35;
   color: #333;
+}
+
+.program-session .session-chair {
+  margin: 0 0 14px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #777;
 }
 
 .program-session ol {
