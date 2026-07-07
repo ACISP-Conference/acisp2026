@@ -5,7 +5,6 @@
       http-equiv="content-type"
       content="application/xhtml+xml; charset=iso-8859-1"
     />
-    <meta name="robots" content="noindex, nofollow" />
     <title>ACISP 2026</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link href="css/bootstrap.min.css" rel="stylesheet" />
@@ -28,6 +27,35 @@
       href="img/favicon/favicon-16x16.png"
     />
     <link rel="manifest" href="img/favicon/site.webmanifest" />
+    <style>
+      .photo-gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        grid-gap: 12px;
+        margin-top: 20px;
+      }
+      .photo-gallery a {
+        display: block;
+        overflow: hidden;
+        border-radius: 4px;
+        background: #f2f2f2;
+      }
+      .photo-gallery img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.25s ease;
+      }
+      .photo-gallery a:hover img {
+        transform: scale(1.05);
+      }
+      .photo-empty {
+        color: #777;
+        font-style: italic;
+        margin-top: 20px;
+      }
+    </style>
   </head>
   <body>
     <div id="wrapper">
@@ -63,7 +91,7 @@
           </ol>
           <div class="carousel-inner" role="listbox">
             <div class="item active">
-              <img src="img/slide0.jpg" alt="..." />
+              <img src="img/slide0.jpg" alt="..." loading="lazy" />
             </div>
             <div class="item">
               <img src="img/slide1.jpg" alt="..." loading="lazy" />
@@ -107,6 +135,9 @@
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="cfp.html">Call for Papers</a></li>
+            <!--
+			<li><a href="si.html">Special Issues</a></li>
+			-->
             <li><a href="pc.html">Program Committee</a></li>
             <li><a href="reg.html">Registration</a></li>
             <li><a href="accepted.html">Accepted Papers</a></li>
@@ -125,9 +156,8 @@
             ><img
               class="img-sponsor"
               alt="Springer"
-              src="img/logo-springer.png"
-          /></a>
-          <br />
+              src="img/logo-springer.png" /></a
+          ><br />
           <br /><a href="https://www.uwa.edu.au/" target="_blank"
             ><img class="img-sponsor" alt="UWA" src="img/uwa-logo.png"
           /></a>
@@ -166,147 +196,35 @@
           /></a>
           <br />
         </div>
-
         <div id="stuff">
+          <p></p>
           <h1 class="sr-only">ACISP 2026</h1>
-          <h2>Session Teams Meeting Links</h2>
+          <h2>Photos</h2>
           <hr />
-
           <p>
-            Every ACISP 2026 session in rooms 2.06 and 2.07 runs as a Microsoft
-            Teams meeting so that presenters and remote participants can join
-            live. Use the link for your room and day below &mdash; each link
-            lists the sessions held in that room. Join 10 minutes early; all
-            times are Perth time (AWST, UTC+8). See the
-            <a href="program.html">technical program</a> for full session times
-            and talk details.
+            A selection of photos taken over the course of ACISP 2026. Click any
+            photo to view it full size. Check back throughout the conference for
+            more.
           </p>
 
-          <div class="callout callout-info">
-            <p>
-              This page is not linked from the rest of the site. Please do not
-              share these links outside the registered ACISP 2026 audience.
-            </p>
+          <!--
+            To add photos: drop image files into img/photos/ and add an
+            entry below following the pattern. The link opens the full-size
+            image; the thumbnail is displayed in the grid.
+          -->
+          <div class="photo-gallery">
+            <!-- Example entry:
+            <a href="img/photos/photo1.jpg" target="_blank">
+              <img src="img/photos/photo1.jpg" alt="ACISP 2026" loading="lazy" />
+            </a>
+            -->
           </div>
 
-          <div class="presenter-two-col">
-            <div class="presenter-panel">
-              <h4>Tuesday 7 July</h4>
-              <ul style="list-style: disc outside; padding-left: 20px">
-                <li>
-                  Room 2.09/2.10 (Keynote):
-                  <a href="https://teams.microsoft.com/meet/47399541451424?p=22qxmgIx3icq8AYo3r">Join Teams meeting</a>
-                  <ul style="list-style: circle outside; padding-left: 20px; margin-top: 4px">
-                    <li>Keynote 1: Cryptographic Thinking for AI</li>
-                  </ul>
-                </li>
-                <li>
-                  Room 2.06:
-                  <a href="https://teams.microsoft.com/meet/45226919175405?p=oWhJlfrpJh6eeCSZTr">Join Teams meeting</a>
-                  <ul style="list-style: circle outside; padding-left: 20px; margin-top: 4px">
-                    <li>Session 1: Backdoors</li>
-                    <li>Session 2: AI &amp; Security</li>
-                    <li>Session 3: Intrusion Detection &amp; Anomaly Analysis</li>
-                    <li>Session 4: Smart Contracts and Blockchain Security</li>
-                  </ul>
-                </li>
-                <li>
-                  Room 2.07:
-                  <a href="https://teams.microsoft.com/meet/47169178168278?p=RqWcH1pglEVgCZKMlM">Join Teams meeting</a>
-                  <ul style="list-style: circle outside; padding-left: 20px; margin-top: 4px">
-                    <li>Session 1: Identity-Based and Public-Key Cryptography</li>
-                    <li>Session 2: Cryptanalytic Methods and Attacks</li>
-                    <li>Session 3: Zero Knowledge, Commitments, and MPC</li>
-                    <li>Session 4: LLM Security</li>
-                    <li>Session 4: Networked Systems Security</li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-
-            <div class="presenter-panel">
-              <h4>Wednesday 8 July</h4>
-              <ul style="list-style: disc outside; padding-left: 20px">
-                <li>
-                  Room 2.09/2.10 (Keynote):
-                  <a href="https://teams.microsoft.com/meet/43823757325589?p=m9OsMCQhUNkvUXDblp">Join Teams meeting</a>
-                  <ul style="list-style: circle outside; padding-left: 20px; margin-top: 4px">
-                    <li>
-                      JS Lecture: Public-Key Cryptography Over the Past Five
-                      Years
-                    </li>
-                    <li>Keynote 2: Explainable Leakage Assessments</li>
-                  </ul>
-                </li>
-                <li>
-                  Room 2.06:
-                  <a href="https://teams.microsoft.com/meet/49388092912367?p=X6TgYflx6CJ1EEitw2">Join Teams meeting</a>
-                  <ul style="list-style: circle outside; padding-left: 20px; margin-top: 4px">
-                    <li>Session 5: Authentication &amp; User Security</li>
-                    <li>Session 6: Cryptanalysis of Symmetric Primitives</li>
-                    <li>Session 7: Threshold, Traceable, and Secure Protocols</li>
-                  </ul>
-                </li>
-                <li>
-                  Room 2.07:
-                  <a href="https://teams.microsoft.com/meet/46643801649240?p=45DVyHBNXLeCNO1Ivm">Join Teams meeting</a>
-                  <ul style="list-style: circle outside; padding-left: 20px; margin-top: 4px">
-                    <li>Session 5: Security Models and Access Control</li>
-                    <li>Session 6: Privacy</li>
-                    <li>Session 7: Applied Cryptography</li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-
-            <div class="presenter-panel">
-              <h4>Thursday 9 July</h4>
-              <ul style="list-style: disc outside; padding-left: 20px">
-                <li>
-                  Room 2.09/2.10 (Keynote):
-                  <a href="https://teams.microsoft.com/meet/43246312171854?p=hBUN6TM99yND9Jkqyb">Join Teams meeting</a>
-                  <ul style="list-style: circle outside; padding-left: 20px; margin-top: 4px">
-                    <li>
-                      Keynote 3: Practical Privacy-Enhancing Systems for IoT
-                      &amp; 5G
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  Room 2.06:
-                  <a href="https://teams.microsoft.com/meet/49207392895508?p=CmfTH1KnjaLWv3RJas">Join Teams meeting</a>
-                  <ul style="list-style: circle outside; padding-left: 20px; margin-top: 4px">
-                    <li>Session 8: Unlearning &amp; Model Reliability</li>
-                    <li>Session 9: Student Symposium</li>
-                    <li>Session 10: Network Traffic Analysis &amp; Detection</li>
-                  </ul>
-                </li>
-                <li>
-                  Room 2.07:
-                  <a href="https://teams.microsoft.com/meet/41122338058742?p=ZAqdOSrOxxcEAWW0uK">Join Teams meeting</a>
-                  <ul style="list-style: circle outside; padding-left: 20px; margin-top: 4px">
-                    <li>
-                      Session 8: Lattice-Based Cryptography and Post-Quantum
-                      Security
-                    </li>
-                    <li>Session 9: Threat Detection and Adversarial Analysis</li>
-                    <li>Session 10: Secure Systems and Trusted Execution</li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <p class="presenter-contact">
-            Questions before the conference:
-            <strong>Jin Hong</strong>,
-            <a href="mailto:jin.hong@uwa.edu.au">jin.hong@uwa.edu.au</a>.
-          </p>
+          <p class="photo-empty">Photos coming soon.</p>
         </div>
       </div>
       <div id="bottom"></div>
     </div>
-
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/menu.js"></script>
